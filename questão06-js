@@ -7,10 +7,10 @@ function calcularDesconto() {
     if (valorCompra >= 200) {
       descontoPercentual = 10;
     }
-    else if (valorCompra >= 201) {
+    if (valorCompra >= 201) {
         descontoPercentual = 15;
     }
-    else if (valorCompra >= 300) {
+    if (valorCompra >= 300) {
         descontoPercentual = 20;
     }
   
