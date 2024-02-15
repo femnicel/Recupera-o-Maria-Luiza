@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Taxas de Empréstimo</title>
+  <script src="calculadora.js" defer></script>
+</head>
+<body>
+
+  <h1>Calculadora de Taxas de Empréstimo no banco "Crédito Seguro"</h1>
+
+  <label for="valorEmprestimo">Valor do Empréstimo (R$): </label>
+  <input type="number" id="valorEmprestimo" placeholder="Insira o valor do carro">
+
+  <label for="metodoContrato">Método de Contrato:</label>
+  <select id="metodoContrato">
+    <option value="1">Concursado</option>
+    <option value="2">Carteira Assinada CLT</option>
+    <option value="3">Contrato Temporário</option>
+  </select>
+
+  <button onclick="calcularEmprestimo()">Calcular Empréstimo</button>
+
+  <p id="resultado"></p>
+
+</body>
+</html>
