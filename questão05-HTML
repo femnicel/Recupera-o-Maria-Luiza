@@ -11,7 +11,7 @@
   <h1>Calculadora de Taxas de Empréstimo no banco "Crédito Seguro"</h1>
 
   <label for="valorEmprestimo">Valor do Empréstimo (R$): </label>
-  <input type="number" id="valorEmprestimo" placeholder="Insira o valor do carro">
+  <input type="number" id="valorEmprestimo" placeholder="Insira o valor do empréstimo">
 
   <label for="metodoContrato">Método de Contrato:</label>
   <select id="metodoContrato">
