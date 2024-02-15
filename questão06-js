@@ -1,0 +1,25 @@
+function calcularDesconto() {
+    var nome = document.getElementById('nome').value;
+    var valorCompra = parseFloat(document.getElementById('valor').value);
+  
+    var descontoPercentual = 0;
+  
+    if (valorCompra >= 200) {
+      descontoPercentual = 10;
+    }
+    else if (valorCompra >= 201) {
+        descontoPercentual = 15;
+    }
+    else if (valorCompra >= 300) {
+        descontoPercentual = 20;
+    }
+  
+    var desconto = (descontoPercentual / 100) * valorCompra;
+    var totalComDesconto = valorCompra - desconto;
+  
+    var output = `${nome}, gastou R$ ${valorCompra.toFixed(2)} então teve ${descontoPercentual}% de desconto e pagou apenas: R$ ${totalComDesconto.toFixed(2)}.`;
+  
+    console.log(output);
+    document.getElementById('output').innerHTML = output;
+  }
+  
