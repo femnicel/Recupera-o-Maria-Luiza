@@ -1,0 +1,40 @@
+function calcularEmprestimo() {
+    var valorEmprestimo = parseFloat(document.getElementById('valorEmprestimo').value);
+    var tipoContrato = parseInt(document.getElementById('tipoContrato').value);
+    var taxaEmprestimo;
+  
+    if (isNaN(valorEmprestimo) || valorTaxa <= 0) {
+      alert('Por favor, insira um contrato válido.');
+      return;
+    }
+  
+    switch (contrato) {
+      case 1:
+        concursado = valorTaxa * 0.1;
+        break;
+      case 2:
+        carteiraAssinadaCLT = valorTaxa * 1.5;
+        break;
+      case 3:
+        contratoTemporario = valorTaxa * 3.0;
+        break;
+    }
+  
+    var valorFinal = valorEmprestimo + taxas;
+  
+    document.getElementById('resultado').innerHTML = "O valor inicial do empréstimo é de R$ " + valorEmprestimo.toFixed(2) +
+      ". Já que o tipo de contrato foi " + metodoContratoDescricao(tipoContrato) +
+      ", a taxa de empréstimo é de " + taxaEmprestimo(taxaEmprestimo) +
+      ",o valor final a ser pago é R$ " + valorFinal.toFixed(2);
+  }
+  
+  function metodoPagamentoDescricao(metodoPagamento) {
+    switch (metodoPagamento) {
+      case 1:
+        return "Concursado";
+      case 2:
+        return "Carteira Assinada CLT";
+      case 3:
+        return "Contrato Temporário";
+    }
+  }
